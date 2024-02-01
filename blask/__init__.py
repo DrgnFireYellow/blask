@@ -13,7 +13,6 @@ app.config["BASIC_AUTH_PASSWORD"] = "passw0rd"
 db = SQLAlchemy(app)
 auth = BasicAuth(app)
 from blask.main.views import blueprint
-from blask.main.models import Post
 from blask.admin.views import admin_blueprint
 app.register_blueprint(blueprint)
 app.register_blueprint(admin_blueprint)
