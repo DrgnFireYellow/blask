@@ -8,8 +8,8 @@ from os import urandom
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///blask.sqlite"
 app.config["SECRET_KEY"] = urandom(16)
-app.config["BASIC_AUTH_USERNAME"] = "admin"
-app.config["BASIC_AUTH_PASSWORD"] = "passw0rd"
+app.config["BASIC_AUTH_USERNAME"] = "SuperZekes&DrgnFireYellow"
+app.config["BASIC_AUTH_PASSWORD"] = "123456zeke"
 db = SQLAlchemy(app)
 auth = BasicAuth(app)
 from blask.main.views import blueprint
